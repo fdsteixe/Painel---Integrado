@@ -357,4 +357,9 @@ function EditarViagemModal({ viagem, onClose, onSalvar, onFinalizar }) {
 
 function Field({ label, children, className = "" }) {
   return (
- 
+ <label className={`block ${className}`}>
+      <span className="block text-[10px] uppercase tracking-wider text-muted mb-1 font-medium">{label}</span>
+      {children}
+    </label>
+  );
+}
